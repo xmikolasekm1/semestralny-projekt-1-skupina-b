@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.215 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest
+BONUSE03_getAllCarParkFloorsEmbedded  Time elapsed: 0.343 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest.BONUSE03_getAllCarParkFloorsEmbedded(CarParkFloorEmbeddedIdTest.java:277)
+
+BONUSE01_createAndGetCarParkFloorTestEmbedded  Time elapsed: 0.212 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest.BONUSE01_createAndGetCarParkFloorTestEmbedded(CarParkFloorEmbeddedIdTest.java:96)
+
+-------------------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.963 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest
+BONUSU03_updateCarParkTest  Time elapsed: 0.192 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <12> but was: <10>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU03_updateCarParkTest(EntityUpdateTest.java:146)
+
+BONUSU01_shouldUpdateCarBrandAndModel  Time elapsed: 0.178 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Car object does not have a brand and a model property. So this test cannot be performed!
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU01_shouldUpdateCarBrandAndModel(EntityUpdateTest.java:54)
+
+BONUSU04_updateParkingSpotWithoutType  Time elapsed: 0.173 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU04_updateParkingSpotWithoutType(EntityUpdateTest.java:185)
+
+BONUSU05_shouldCreateAndUpdateReservation  Time elapsed: 0.235 s  <<< ERROR!
+java.lang.RuntimeException: Cannot test reservation for update. Field not found!
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU05_shouldCreateAndUpdateReservation(EntityUpdateTest.java:293)
+
+-------------------------------------------------------------------------------
+ 

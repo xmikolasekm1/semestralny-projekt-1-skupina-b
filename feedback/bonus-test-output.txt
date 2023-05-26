@@ -1,0 +1,212 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< sk.stuba.fei.uim.vsa:b-vsa-ls22-project1-B >-------------
+[INFO] Building b-vsa-ls22-project1-B 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ b-vsa-ls22-project1-B ---
+[INFO] Deleting C:\Users\mlado\Documents\Projects\School\VSA\LS 21-22\opravovanie\zadanie1\skupiny\skupinaB\xmikolasekm1\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ b-vsa-ls22-project1-B ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ b-vsa-ls22-project1-B ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to C:\Users\mlado\Documents\Projects\School\VSA\LS 21-22\opravovanie\zadanie1\skupiny\skupinaB\xmikolasekm1\target\classes
+[WARNING] /C:/Users/mlado/Documents/Projects/School/VSA/LS 21-22/opravovanie/zadanie1/skupiny/skupinaB/xmikolasekm1/src/main/java/sk/stuba/fei/uim/vsa/pr1b/CarParkService.java: C:\Users\mlado\Documents\Projects\School\VSA\LS 21-22\opravovanie\zadanie1\skupiny\skupinaB\xmikolasekm1\src\main\java\sk\stuba\fei\uim\vsa\pr1b\CarParkService.java uses unchecked or unsafe operations.
+[WARNING] /C:/Users/mlado/Documents/Projects/School/VSA/LS 21-22/opravovanie/zadanie1/skupiny/skupinaB/xmikolasekm1/src/main/java/sk/stuba/fei/uim/vsa/pr1b/CarParkService.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ b-vsa-ls22-project1-B ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ b-vsa-ls22-project1-B ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ b-vsa-ls22-project1-B ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ b-vsa-ls22-project1-B ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to C:\Users\mlado\Documents\Projects\School\VSA\LS 21-22\opravovanie\zadanie1\skupiny\skupinaB\xmikolasekm1\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ b-vsa-ls22-project1-B ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest
+[EL Info]: 2022-05-26 22:30:50.02--ServerSession(596470015)--EclipseLink, version: Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3
+[EL Fine]: sql: 2022-05-26 22:30:51.243--ServerSession(596470015)--Connection(24293395)--ALTER TABLE CAR DROP FOREIGN KEY FK_CAR_USER_id
+[EL Fine]: sql: 2022-05-26 22:30:51.269--ServerSession(596470015)--Connection(24293395)--ALTER TABLE CAR DROP FOREIGN KEY FK_CAR_CARTYPE_id
+[EL Fine]: sql: 2022-05-26 22:30:51.278--ServerSession(596470015)--Connection(24293395)--ALTER TABLE RESERVATION DROP FOREIGN KEY FK_RESERVATION_PARKINGSPOT_IDMIESTA
+[EL Fine]: sql: 2022-05-26 22:30:51.288--ServerSession(596470015)--Connection(24293395)--ALTER TABLE RESERVATION DROP FOREIGN KEY FK_RESERVATION_CAR_id
+[EL Fine]: sql: 2022-05-26 22:30:51.299--ServerSession(596470015)--Connection(24293395)--ALTER TABLE CAR_PARK_FLOOR DROP FOREIGN KEY FK_CAR_PARK_FLOOR_CARPARK_ID
+[EL Fine]: sql: 2022-05-26 22:30:51.309--ServerSession(596470015)--Connection(24293395)--ALTER TABLE PARKING_SPOT DROP FOREIGN KEY FK_PARKING_SPOT_idParkingFloor
+[EL Fine]: sql: 2022-05-26 22:30:51.321--ServerSession(596470015)--Connection(24293395)--DROP TABLE CAR
+[EL Fine]: sql: 2022-05-26 22:30:51.337--ServerSession(596470015)--Connection(24293395)--DROP TABLE USER
+[EL Fine]: sql: 2022-05-26 22:30:51.355--ServerSession(596470015)--Connection(24293395)--DROP TABLE RESERVATION
+[EL Fine]: sql: 2022-05-26 22:30:51.372--ServerSession(596470015)--Connection(24293395)--DROP TABLE CAR_PARK
+[EL Fine]: sql: 2022-05-26 22:30:51.389--ServerSession(596470015)--Connection(24293395)--DROP TABLE CAR_PARK_FLOOR
+[EL Fine]: sql: 2022-05-26 22:30:51.404--ServerSession(596470015)--Connection(24293395)--DROP TABLE PARKING_SPOT
+[EL Fine]: sql: 2022-05-26 22:30:51.42--ServerSession(596470015)--Connection(24293395)--DROP TABLE CAR_TYPE
+[EL Fine]: sql: 2022-05-26 22:30:51.44--ServerSession(596470015)--Connection(24293395)--DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2022-05-26 22:30:51.449--ServerSession(596470015)--Connection(24293395)--CREATE TABLE CAR (id BIGINT NOT NULL, ecv VARCHAR(255) UNIQUE, farba VARCHAR(255), model VARCHAR(255), znacka VARCHAR(255), USER_id BIGINT, CARTYPE_id BIGINT, PRIMARY KEY (id))
+[EL Fine]: sql: 2022-05-26 22:30:51.479--ServerSession(596470015)--Connection(24293395)--CREATE TABLE USER (id BIGINT NOT NULL, email VARCHAR(255) NOT NULL UNIQUE, firstname VARCHAR(255) NOT NULL, lastname VARCHAR(255) NOT NULL, PRIMARY KEY (id))
+[EL Fine]: sql: 2022-05-26 22:30:51.508--ServerSession(596470015)--Connection(24293395)--CREATE TABLE RESERVATION (id BIGINT NOT NULL, CELKOVACENA DOUBLE, DATUM DATETIME NOT NULL, IDUSER BIGINT NOT NULL, KONIEC DATETIME, CAR_id BIGINT, PARKINGSPOT_IDMIESTA BIGINT, PRIMARY KEY (id))
+[EL Fine]: sql: 2022-05-26 22:30:51.532--ServerSession(596470015)--Connection(24293395)--CREATE TABLE CAR_PARK (ID BIGINT NOT NULL, ADRESA VARCHAR(255) NOT NULL, NAZOV VARCHAR(255) NOT NULL, CENA INTEGER NOT NULL, PRIMARY KEY (ID))
+[EL Fine]: sql: 2022-05-26 22:30:51.561--ServerSession(596470015)--Connection(24293395)--CREATE TABLE CAR_PARK_FLOOR (floorIdentifier VARCHAR(255) NOT NULL UNIQUE, idPark BIGINT NOT NULL, CARPARK_ID BIGINT, PRIMARY KEY (floorIdentifier, idPark))
+[EL Fine]: sql: 2022-05-26 22:30:51.595--ServerSession(596470015)--Connection(24293395)--CREATE TABLE PARKING_SPOT (IDMIESTA BIGINT NOT NULL, CARTYPE VARCHAR(255), SPOTIDENTIFIER VARCHAR(255), idCarParku BIGINT, idParkingFloor VARCHAR(255), PRIMARY KEY (IDMIESTA))
+[EL Fine]: sql: 2022-05-26 22:30:51.663--ServerSession(596470015)--Connection(24293395)--CREATE TABLE CAR_TYPE (id BIGINT NOT NULL, carType VARCHAR(255) NOT NULL UNIQUE, PRIMARY KEY (id))
+[EL Fine]: sql: 2022-05-26 22:30:51.732--ServerSession(596470015)--Connection(24293395)--ALTER TABLE CAR ADD CONSTRAINT FK_CAR_USER_id FOREIGN KEY (USER_id) REFERENCES USER (id)
+[EL Fine]: sql: 2022-05-26 22:30:51.876--ServerSession(596470015)--Connection(24293395)--ALTER TABLE CAR ADD CONSTRAINT FK_CAR_CARTYPE_id FOREIGN KEY (CARTYPE_id) REFERENCES CAR_TYPE (id)
+[EL Fine]: sql: 2022-05-26 22:30:51.986--ServerSession(596470015)--Connection(24293395)--ALTER TABLE RESERVATION ADD CONSTRAINT FK_RESERVATION_PARKINGSPOT_IDMIESTA FOREIGN KEY (PARKINGSPOT_IDMIESTA) REFERENCES PARKING_SPOT (IDMIESTA)
+[EL Fine]: sql: 2022-05-26 22:30:52.061--ServerSession(596470015)--Connection(24293395)--ALTER TABLE RESERVATION ADD CONSTRAINT FK_RESERVATION_CAR_id FOREIGN KEY (CAR_id) REFERENCES CAR (id)
+[EL Fine]: sql: 2022-05-26 22:30:52.13--ServerSession(596470015)--Connection(24293395)--ALTER TABLE CAR_PARK_FLOOR ADD CONSTRAINT FK_CAR_PARK_FLOOR_CARPARK_ID FOREIGN KEY (CARPARK_ID) REFERENCES CAR_PARK (ID)
+[EL Fine]: sql: 2022-05-26 22:30:52.204--ServerSession(596470015)--Connection(24293395)--ALTER TABLE PARKING_SPOT ADD CONSTRAINT FK_PARKING_SPOT_idParkingFloor FOREIGN KEY (idParkingFloor, idCarParku) REFERENCES CAR_PARK_FLOOR (floorIdentifier, idPark)
+[EL Fine]: sql: 2022-05-26 22:30:52.276--ServerSession(596470015)--Connection(24293395)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2022-05-26 22:30:52.277--ServerSession(596470015)--Connection(24293395)--INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values ('SEQ_GEN', 0)
+car park class: sk.stuba.fei.uim.vsa.pr1b.CarParkService
+[EL Fine]: sql: 2022-05-26 22:30:52.548--ClientSession(605101809)--Connection(24293395)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind => [50, SEQ_GEN]
+[EL Fine]: sql: 2022-05-26 22:30:52.549--ClientSession(605101809)--Connection(24293395)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind => [SEQ_GEN]
+[EL Fine]: sql: 2022-05-26 22:30:52.569--ClientSession(605101809)--Connection(24293395)--INSERT INTO CAR_PARK (ID, ADRESA, NAZOV, CENA) VALUES (?, ?, ?, ?)
+	bind => [1, testtest, test5, 12]
+[EL Fine]: sql: 2022-05-26 22:30:52.596--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='1';
+[EL Fine]: sql: 2022-05-26 22:30:52.624--ClientSession(1763260873)--Connection(24293395)--INSERT INTO CAR_PARK_FLOOR (floorIdentifier, idPark, CARPARK_ID) VALUES (?, ?, ?)
+	bind => [Floor1, 1, 1]
+[EL Fine]: sql: 2022-05-26 22:30:52.63--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='1';
+[EL Fine]: sql: 2022-05-26 22:30:52.635--ClientSession(1895143699)--Connection(24293395)--INSERT INTO CAR_PARK_FLOOR (floorIdentifier, idPark, CARPARK_ID) VALUES (?, ?, ?)
+	bind => [Floor2, 1, 1]
+[EL Fine]: sql: 2022-05-26 22:30:52.991--ClientSession(1666544295)--Connection(24293395)--INSERT INTO CAR_PARK (ID, ADRESA, NAZOV, CENA) VALUES (?, ?, ?, ?)
+	bind => [2, testtest, FLOOR-DELETE, 12]
+[EL Fine]: sql: 2022-05-26 22:30:53.111--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='2';
+[EL Fine]: sql: 2022-05-26 22:30:53.116--ClientSession(1912850431)--Connection(24293395)--INSERT INTO CAR_PARK_FLOOR (floorIdentifier, idPark, CARPARK_ID) VALUES (?, ?, ?)
+	bind => [Floor1, 2, 2]
+[EL Fine]: sql: 2022-05-26 22:30:53.131--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='2' and floorIdentifier='Floor1'
+[EL Fine]: sql: 2022-05-26 22:30:53.134--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='2';
+[EL Fine]: sql: 2022-05-26 22:30:53.138--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='2'
+[EL Fine]: sql: 2022-05-26 22:30:53.142--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='2';
+[EL Fine]: sql: 2022-05-26 22:30:53.145--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='2' and floorIdentifier='Floor1'
+[EL Fine]: sql: 2022-05-26 22:30:53.151--ClientSession(2033524545)--Connection(24293395)--DELETE FROM CAR_PARK_FLOOR WHERE ((floorIdentifier = ?) AND (idPark = ?))
+	bind => [Floor1, 2]
+[EL Fine]: sql: 2022-05-26 22:30:53.158--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='2';
+[EL Fine]: sql: 2022-05-26 22:30:53.162--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='2'
+[EL Fine]: sql: 2022-05-26 22:30:53.353--ClientSession(247113419)--Connection(24293395)--INSERT INTO CAR_PARK (ID, ADRESA, NAZOV, CENA) VALUES (?, ?, ?, ?)
+	bind => [3, testtest, test4, 12]
+[EL Fine]: sql: 2022-05-26 22:30:53.359--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='3';
+[EL Fine]: sql: 2022-05-26 22:30:53.361--ClientSession(1426725223)--Connection(24293395)--INSERT INTO CAR_PARK_FLOOR (floorIdentifier, idPark, CARPARK_ID) VALUES (?, ?, ?)
+	bind => [Floor1, 3, 3]
+[EL Fine]: sql: 2022-05-26 22:30:53.367--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='3' and floorIdentifier='Floor1'
+[EL Fine]: sql: 2022-05-26 22:30:53.369--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='3';
+[EL Fine]: sql: 2022-05-26 22:30:53.374--ClientSession(2008106788)--Connection(24293395)--INSERT INTO CAR_PARK_FLOOR (floorIdentifier, idPark, CARPARK_ID) VALUES (?, ?, ?)
+	bind => [Floor2, 3, 3]
+[EL Fine]: sql: 2022-05-26 22:30:53.381--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='3' and floorIdentifier='Floor2'
+[ERROR] Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.215 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest
+[ERROR] BONUSE03_getAllCarParkFloorsEmbedded  Time elapsed: 0.343 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest.BONUSE03_getAllCarParkFloorsEmbedded(CarParkFloorEmbeddedIdTest.java:277)
+
+[ERROR] BONUSE01_createAndGetCarParkFloorTestEmbedded  Time elapsed: 0.212 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.CarParkFloorEmbeddedIdTest.BONUSE01_createAndGetCarParkFloorTestEmbedded(CarParkFloorEmbeddedIdTest.java:96)
+
+[INFO] Running sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest
+car park class: sk.stuba.fei.uim.vsa.pr1b.CarParkService
+[EL Fine]: sql: 2022-05-26 22:30:53.651--ClientSession(69673470)--Connection(24293395)--INSERT INTO CAR_PARK (ID, ADRESA, NAZOV, CENA) VALUES (?, ?, ?, ?)
+	bind => [4, test11, UPDATE-CAR-PARK-1, 10]
+[EL Fine]: sql: 2022-05-26 22:30:53.658--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='4';
+[EL Fine]: sql: 2022-05-26 22:30:53.66--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='4';
+[EL Fine]: sql: 2022-05-26 22:30:53.808--ClientSession(1412322831)--Connection(24293395)--INSERT INTO USER (id, email, firstname, lastname) VALUES (?, ?, ?, ?)
+	bind => [5, jozko.mrkvicka@example.com, Jožko, Mrkvièka]
+[EL Fine]: sql: 2022-05-26 22:30:53.815--ServerSession(596470015)--Connection(24293395)--select * from CAR_TYPE where carType='Benzin';
+[EL Fine]: sql: 2022-05-26 22:30:53.828--ClientSession(69062746)--Connection(24293395)--INSERT INTO CAR_TYPE (id, carType) VALUES (?, ?)
+	bind => [6, Benzin]
+[EL Fine]: sql: 2022-05-26 22:30:53.834--ClientSession(781091365)--Connection(24293395)--INSERT INTO CAR (id, ecv, farba, model, znacka, USER_id, CARTYPE_id) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [7, BL798XX, black, A7, Audi, 5, 6]
+[EL Fine]: sql: 2022-05-26 22:30:53.992--ClientSession(756936249)--Connection(24293395)--INSERT INTO CAR_PARK (ID, ADRESA, NAZOV, CENA) VALUES (?, ?, ?, ?)
+	bind => [8, testtest, test7, 12]
+[EL Fine]: sql: 2022-05-26 22:30:53.997--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='8';
+[EL Fine]: sql: 2022-05-26 22:30:53.999--ClientSession(722417467)--Connection(24293395)--INSERT INTO CAR_PARK_FLOOR (floorIdentifier, idPark, CARPARK_ID) VALUES (?, ?, ?)
+	bind => [Floor1, 8, 8]
+[EL Fine]: sql: 2022-05-26 22:30:54.004--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='8';
+[EL Fine]: sql: 2022-05-26 22:30:54.005--ServerSession(596470015)--Connection(24293395)--select * from PARKING_SPOT where idCarParku='8' and SPOTIDENTIFIER='1.1'
+[EL Fine]: sql: 2022-05-26 22:30:54.006--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='8' and floorIdentifier='Floor1'
+[EL Fine]: sql: 2022-05-26 22:30:54.008--ClientSession(603658030)--Connection(24293395)--INSERT INTO PARKING_SPOT (IDMIESTA, CARTYPE, SPOTIDENTIFIER, idCarParku, idParkingFloor) VALUES (?, ?, ?, ?, ?)
+	bind => [9, Benzin, 1.1, 8, Floor1]
+[EL Fine]: sql: 2022-05-26 22:30:54.155--ClientSession(976827477)--Connection(24293395)--INSERT INTO USER (id, email, firstname, lastname) VALUES (?, ?, ?, ?)
+	bind => [10, jozko.mrkvicka@example.com, Jožko, Mrkvièka]
+[EL Fine]: sql: 2022-05-26 22:30:54.162--ClientSession(1261044180)--Connection(24293395)--UPDATE USER SET email = ? WHERE (id = ?)
+	bind => [jozko.je.super@example.com, 10]
+[EL Fine]: sql: 2022-05-26 22:30:54.306--ClientSession(172215878)--Connection(24293395)--INSERT INTO CAR_PARK (ID, ADRESA, NAZOV, CENA) VALUES (?, ?, ?, ?)
+	bind => [11, testtest, test8, 12]
+[EL Fine]: sql: 2022-05-26 22:30:54.312--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='11';
+[EL Fine]: sql: 2022-05-26 22:30:54.315--ClientSession(1033348658)--Connection(24293395)--INSERT INTO CAR_PARK_FLOOR (floorIdentifier, idPark, CARPARK_ID) VALUES (?, ?, ?)
+	bind => [Floor3-1, 11, 11]
+[EL Fine]: sql: 2022-05-26 22:30:54.321--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK where ID='11';
+[EL Fine]: sql: 2022-05-26 22:30:54.322--ServerSession(596470015)--Connection(24293395)--select * from PARKING_SPOT where idCarParku='11' and SPOTIDENTIFIER='1.01'
+[EL Fine]: sql: 2022-05-26 22:30:54.323--ServerSession(596470015)--Connection(24293395)--select * from CAR_PARK_FLOOR where idPark='11' and floorIdentifier='Floor3-1'
+[EL Fine]: sql: 2022-05-26 22:30:54.326--ClientSession(1088417975)--Connection(24293395)--INSERT INTO PARKING_SPOT (IDMIESTA, CARTYPE, SPOTIDENTIFIER, idCarParku, idParkingFloor) VALUES (?, ?, ?, ?, ?)
+	bind => [12, Benzin, 1.01, 11, Floor3-1]
+[EL Fine]: sql: 2022-05-26 22:30:54.341--ClientSession(1640612861)--Connection(24293395)--INSERT INTO USER (id, email, firstname, lastname) VALUES (?, ?, ?, ?)
+	bind => [13, jozko.mrkvicka@example.com, Jožko, Mrkvièka]
+[EL Fine]: sql: 2022-05-26 22:30:54.348--ServerSession(596470015)--Connection(24293395)--select * from CAR_TYPE where carType='Benzin';
+[EL Fine]: sql: 2022-05-26 22:30:54.36--ClientSession(1555990397)--Connection(24293395)--INSERT INTO CAR_TYPE (id, carType) VALUES (?, ?)
+	bind => [14, Benzin]
+[EL Fine]: sql: 2022-05-26 22:30:54.366--ClientSession(1108889615)--Connection(24293395)--INSERT INTO CAR (id, ecv, farba, model, znacka, USER_id, CARTYPE_id) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [15, BL798XX, black, A7, Audi, 13, 14]
+[EL Fine]: sql: 2022-05-26 22:30:54.372--ServerSession(596470015)--Connection(24293395)--select * from PARKING_SPOT where idMiesta='12'
+[EL Fine]: sql: 2022-05-26 22:30:54.379--ClientSession(1280603381)--Connection(24293395)--INSERT INTO RESERVATION (id, CELKOVACENA, DATUM, IDUSER, KONIEC, CAR_id, PARKINGSPOT_IDMIESTA) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [16, null, 2022-05-26 10:30:54.0, 13, null, 15, 12]
+[TEST LOG] 2022-05-26 : WARNING: More than one potential id field find on object of class sk.stuba.fei.uim.vsa.pr1b.RESERVATION
+[ERROR] Tests run: 5, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.963 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest
+[ERROR] BONUSU03_updateCarParkTest  Time elapsed: 0.192 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <12> but was: <10>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU03_updateCarParkTest(EntityUpdateTest.java:146)
+
+[ERROR] BONUSU01_shouldUpdateCarBrandAndModel  Time elapsed: 0.178 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Car object does not have a brand and a model property. So this test cannot be performed!
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU01_shouldUpdateCarBrandAndModel(EntityUpdateTest.java:54)
+
+[ERROR] BONUSU04_updateParkingSpotWithoutType  Time elapsed: 0.173 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU04_updateParkingSpotWithoutType(EntityUpdateTest.java:185)
+
+[ERROR] BONUSU05_shouldCreateAndUpdateReservation  Time elapsed: 0.235 s  <<< ERROR!
+java.lang.RuntimeException: Cannot test reservation for update. Field not found!
+	at sk.stuba.fei.uim.vsa.pr1b.bonus.EntityUpdateTest.BONUSU05_shouldCreateAndUpdateReservation(EntityUpdateTest.java:293)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CarParkFloorEmbeddedIdTest.BONUSE01_createAndGetCarParkFloorTestEmbedded:96 expected: not <null>
+[ERROR]   CarParkFloorEmbeddedIdTest.BONUSE03_getAllCarParkFloorsEmbedded:277 expected: not <null>
+[ERROR]   EntityUpdateTest.BONUSU01_shouldUpdateCarBrandAndModel:54 Car object does not have a brand and a model property. So this test cannot be performed!
+[ERROR]   EntityUpdateTest.BONUSU03_updateCarParkTest:146 expected: <12> but was: <10>
+[ERROR]   EntityUpdateTest.BONUSU04_updateParkingSpotWithoutType:185 expected: not <null>
+[ERROR] Errors: 
+[ERROR]   EntityUpdateTest.BONUSU05_shouldCreateAndUpdateReservation:293 Runtime Cannot ...
+[INFO] 
+[ERROR] Tests run: 8, Failures: 5, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.649 s
+[INFO] Finished at: 2022-05-26T22:30:54+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.2:test (default-test) on project b-vsa-ls22-project1-B: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\mlado\Documents\Projects\School\VSA\LS 21-22\opravovanie\zadanie1\skupiny\skupinaB\xmikolasekm1\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
